@@ -68,3 +68,22 @@ function linha() {
 // document.write(`<br>A soma de todos os numeros do vetor é ${soma}`);
 // linha();
 //! ----------------MATERIA DA AV1 É DAQ PRA CIMA-------------
+var corpo = document.body;
+corpo.style.background = "blue";
+//*exemplo de seletor getElementsByTagName()
+var a = document.getElementsByTagName("p")[1];
+a.style.display = "inline";
+a.style.color = "red";
+a.style.fontSize = "16pt";
+a.style.background = "purple";
+a.style.fontFamily = "Arial";
+//*exemplos de seletor getElementById()
+var b = document.getElementById('a')
+b.style.display = "inline";
+b.style.color = "grey";
+b.style.fontSize = "16pt";
+b.style.background = "yellow";
+b.style.fontFamily = "Arial";
+b.innerHTML='Alterando a palavra teste para <strong>DOM</strong>'
+// innerText/textContent - traz somente o texto
+// innerHTML - traz o texto e a sua formatação
