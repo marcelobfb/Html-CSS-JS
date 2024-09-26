@@ -74,6 +74,7 @@ var soma=document.querySelector('#btn6')
 function somar(){
     a=Number(document.querySelector('#n1').value)
     b=Number(document.querySelector('#n2').value)
-    resp.innerText=`A soma dos valores = ${a+b}`
+    resultado=a+b
+    resp.innerText=`A soma dos valores = ${resultado}`
 }
 soma.addEventListener('click',somar)
