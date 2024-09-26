@@ -1,0 +1,22 @@
+#btn{
+    color: red;
+}
+#a{
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+}
+#b{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 150px;
+}
+#img{
+    width: 150px;
+    height: 150px;
+}
