@@ -69,3 +69,11 @@ document.querySelector('#btn5').addEventListener('mouseout',function(){
     this.style.height='50px'
     this.style.width='100px'
 })
+
+var soma=document.querySelector('#btn6')
+function somar(){
+    a=Number(document.querySelector('#n1').value)
+    b=Number(document.querySelector('#n2').value)
+    resp.innerText=`A soma dos valores = ${a+b}`
+}
+soma.addEventListener('click',somar)
