@@ -43,3 +43,14 @@ function tabuadin() {
 
 }
 tabuada.addEventListener("click", tabuadin);
+
+var calfatorial = document.querySelector("#btn6");
+function fatorial() {
+    x = Number(document.querySelector("#numero").value);
+    result=1
+    for(var i=1;i<=x;i++){
+        result*=i
+        resp6.innerHTML = `${x}!=${result}<br>`
+    }
+}
+calfatorial.addEventListener("click", fatorial);
