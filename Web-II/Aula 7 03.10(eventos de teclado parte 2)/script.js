@@ -76,3 +76,22 @@ function hh(event){
 }
 document.addEventListener('keydown',h)
 document.addEventListener('keyup',hh)
+// *Exemplo 7 - inserir item na lista
+var i=document.getElementById('input4')
+var l=document.getElementById('lista')
+
+function adicionar(event){
+    if(event.key=='Enter'){
+        var novoItem=document.createElement('li')
+        novoItem.innerText=i.value
+        l.appendChild(novoItem)
+        i.value=''
+    }
+    else if(event.key=='Delete'){
+        var ultimoItem = l.lastChild;
+        if (ultimoItem) {
+            l.removeChild(ultimoItem);
+        }
+    }
+}
+i.addEventListener('keydown',adicionar)
