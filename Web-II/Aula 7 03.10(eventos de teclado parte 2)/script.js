@@ -62,3 +62,17 @@ function cor(event) {
     }
 }
 document.addEventListener("keydown", cor);
+// *exemplo 6 - alterar a cor do elemento com a barra de espaço
+var elemento=document.getElementById('elemento')
+function h(event){
+    if(event.key==' '){
+        elemento.style.backgroundColor='black'
+    }
+}
+function hh(event){
+    if(event.key==' '){
+        elemento.style.backgroundColor='lightblue'
+    }
+}
+document.addEventListener('keydown',h)
+document.addEventListener('keyup',hh)
