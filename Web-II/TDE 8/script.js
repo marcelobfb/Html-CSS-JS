@@ -1,4 +1,5 @@
-// var contadorA = 0; //! EXERCÍCIO 1
+//! EXERCÍCIO 1
+// var contadorA = 0;
 // var reset = document.getElementById('reset')
 
 // document.addEventListener('keydown', (event) => {
@@ -12,8 +13,6 @@
 //     contadorA = 0;
 //     document.getElementById('res').innerText = `Quantidade de a's digitados: ${contadorA}`
 // })
-
-
 
 
 // document.addEventListener('keydown', (event) => { //! EXERCÍCIO 3
@@ -55,12 +54,10 @@ document.addEventListener('keydown', (event) => {
     }
 });
 
-// Função para gerar um número aleatório
 function randomNumber() {
     return Math.floor(Math.random() * keys.length);
 }
 
-// Função para verificar a tecla pressionada
 function checkKey(key) {
     if (key === keys[numeroRandom]) {
         corrects++;
@@ -72,7 +69,6 @@ function checkKey(key) {
     generateRandomKey();
 }
 
-// Função para gerar uma tecla aleatória
 function generateRandomKey() {
     numeroRandom = randomNumber();
     key.innerHTML = keys[numeroRandom];
