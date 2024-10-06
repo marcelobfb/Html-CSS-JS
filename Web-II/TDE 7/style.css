@@ -1,0 +1,32 @@
+#caixa{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    color: white;
+}
+#caixa2{
+    height: 100px;
+    width: 100px;
+    background-color: purple;
+    color: white;
+}
+#area{
+    height: 100px;
+    width: 100px;
+    background-color: darkblue;
+    color: white;
+}
+#caixa3{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    color: white;
+}
+#caixa4{
+    height: 100px;
+    width: 100px;
+    background-color: darkgoldenrod;
+    color: white;
+    position: absolute;
+    cursor: grab;
+}
