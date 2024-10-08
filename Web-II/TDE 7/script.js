@@ -25,9 +25,9 @@ const area = document.getElementById("area");
 const mouse = document.getElementById("mouse");
 
 area.addEventListener("mousemove", function (event) {
-    const rect = area.getBoundingClientRect(); // Obtém as coordenadas do retângulo
-    const x = event.clientX - rect.left; // Coordenada X relativa à área
-    const y = event.clientY - rect.top; // Coordenada Y relativa à área
+    const rect = area.getBoundingClientRect();
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
 
     mouse.textContent = `X: ${x.toFixed(0)}, Y: ${y.toFixed(0)}`;
 });
