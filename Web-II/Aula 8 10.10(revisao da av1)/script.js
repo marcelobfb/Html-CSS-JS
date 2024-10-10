@@ -51,3 +51,5 @@ for (let i = 0; i < 6; i++) {
         document.write(`<br>O número ${tenta[i]}`);
     }
 }
+rsp5=1/(60*60*60*60*60*60)
+document.write(`<br>A chance de uma pessoa acertar é de ${rsp5} `)
