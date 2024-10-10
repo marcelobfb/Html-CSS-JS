@@ -26,7 +26,6 @@ switch (true){
     case (distancia>100&&distancia<=300):
         custo=distancia*8
         document.write(`<br>O custo de envio é R$${custo.toFixed(2)}`)
-
         break
     case (distancia>300):
         custo=distancia*6
