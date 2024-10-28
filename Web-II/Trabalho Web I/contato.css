@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(210, 208, 208);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cat-header-icon {
+  z-index: 10;
+  position: relative;
+  top: 25px;
+  margin-left: 20px;
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-right: 10px;
+  margin-top: 10px;
+  gap: 15px;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 8px solid #b31217;
+  position: relative;
+  height: calc(100vh - 38px);
+}
+
+.fundogato {
+  background: url("gatinho.png");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+p {
+  font-size: 15pt;
+  color: #ddd9d9;
+}
+
+h2 {
+  font-size: 110pt;
+  color: white;
+}
+
+h1{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-texto {
+  z-index: 1;
+  text-align: center;
+  font-size: 35pt;
+  border-radius: 10px;
+  font-weight: lighter;
+}
+
+.animation {
+  animation: troca 30s infinite;
+}
+
+@keyframes troca {
+  0% {
+    background: url("gatinho.jpg") no-repeat center center;
+    background-size: cover;
+  }
+
+  33% {
+    background: url("gato2.jpg") no-repeat center center;
+    background-size: cover;
+  }
+
+  66% {
+    background: url('gato3.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  100% {
+    background: url("gato4.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
+
+.cadastro {
+  display: inline-block;
+  background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(253, 253, 253);
+  border-radius: 10px;
+  width: 200px;
+  height: 60px;
+}
+
+.cadastro:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+.menu:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.container-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+  margin-top: 10px;
+  gap: 10px;
+
+
+}
+
+.menu {
+  display: flex;
+  background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(253, 253, 253);
+  border-radius: 10px;
+  height: 35px;
+  width: 110px;
+
+}
+
+#footer {
+  height: 30px;
+  z-index: 2;
+  background-color: #b31217;
+  color: white;
+  font-family: Arial;
+  font-size: 7pt;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icons-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .cadastro {
+    width: 200px;
+    height: 50px;
+  }
+
+  .menu {
+    width: 90px;
+    height: 30px;
+    margin-bottom: 5px;
+  }
+
+  h2 {
+    font-size: 70pt;
+  }
+
+  .container-texto {
+    font-size: 25pt;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .cadastro {
+    width: 120px;
+    height: 40px;
+    font-size: 12pt;
+  }
+
+  .menu {
+    width: 80px;
+    height: 25px;
+    font-size: 10pt;
+    margin-bottom: 5px;
+  }
+
+  h2 {
+    font-size: 50pt;
+  }
+
+  .container-texto {
+    font-size: 20pt;
+  }
+}
