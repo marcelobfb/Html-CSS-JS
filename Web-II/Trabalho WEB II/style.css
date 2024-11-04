@@ -13,7 +13,6 @@
     border: 0;
     text-decoration: none;
     text-transform: capitalize;
-    transition: 0.2s linear;
     font-family: "Roboto", sans-serif;
 }
 
@@ -43,14 +42,15 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .navbar a{
     margin: 0 1rem;
     font-size: 1.8rem;
     color: #fff;
+    transition: 0.2s linear;
 }
 
 .navbar a:hover{
@@ -60,9 +60,17 @@ section{
     font-size: 1.9rem;
 }
 
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
 .icons img{
     margin: 1rem;
     cursor: pointer;
+    transition: 0.2s linear;
 
 }
 
@@ -79,6 +87,7 @@ section{
     cursor: pointer;
     margin-top: 1rem;
     display: inline-block;
+    transition: 0.2s linear;
 }
 
 .btn:hover{
@@ -244,4 +253,21 @@ section{
 }
 .footer .share img:hover{
     background-color: var(--main-color);
+}
+#textoprocura{
+    padding: 0 1rem;
+    display: none;
+    height: 30px;
+    width: 170px;
+    border-radius: 1rem;
+}
+#shop{
+    background: var(--black);
+    width: 300px;
+    height: 300px;
+    border-radius:0 0 1rem 1rem;
+    position: fixed;
+    right: 100vw;
+    top: 124px;
+    z-index: 100;
 }
