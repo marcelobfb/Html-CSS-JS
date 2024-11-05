@@ -365,6 +365,9 @@ section {
         height: auto;
         right: 5%;
     }
+    #shop{
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
@@ -389,8 +392,12 @@ section {
     .review .box-container .box {
         padding: 2rem;
     }
-}
-    .home-container{
+    #home-container{
         padding: 5rem;
         margin-top: 3rem;
     }
+
+    #shop{
+        display: none;
+    }
+}
