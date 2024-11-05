@@ -258,7 +258,7 @@ section {
     height: 400px;
     border-radius: 0 0 1rem 1rem;
     position: fixed;
-    right: 100vw;
+    right: -500px;
     top: 124px;
     z-index: 100;
 }
@@ -300,7 +300,7 @@ section {
     display: none;
     position: absolute;
     top: 63%;
-    left: 70%;
+    right: 19%;
     max-height: 150px;
     overflow-y: auto;
     z-index: 10;
