@@ -160,6 +160,8 @@ searchInput.addEventListener("keydown", function (event) {
         }
     }
 });
+
 document.getElementById("finalizarcompra").addEventListener("click", function() {
-    window.location.href = "./carrinho/index.html";
+    window.location.href = "../carrinho/index.html";
 });
+
