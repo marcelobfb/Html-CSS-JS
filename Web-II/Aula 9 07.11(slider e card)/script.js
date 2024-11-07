@@ -51,3 +51,7 @@ function resetCard(card) {
 function showMoreInfo() {
     alert("Mais informação");
 }
+
+function flipCard(card) {
+    card.classList.toggle('flipped');
+}

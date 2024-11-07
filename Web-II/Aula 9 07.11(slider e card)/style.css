@@ -82,14 +82,36 @@
     padding: 1rem;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    #dvSlider {
-        width: 100%;
-        height: 250px;
-    }
+.card-flip{
+    width: 300px;
+    height: 200px;
+    perspective: 1000px; /*profundidade para o efeito 3d*/
+}
+.card-inner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d; /* permite o efeito 3d*/
+    transition: transform 0.6s; /*tempo da animação*/
+}
 
-    .card, .card-rotate {
-        width: 100%;
-    }
+.card-flip.flipped .card-inner{
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.card-back{
+    transform: rotateY(180deg);
+    background-color: #d3d3d3;  
 }

@@ -21,7 +21,7 @@
                 onclick="troca(1)"
             />
         </div>
-        
+
         <!-- Example Card -->
         <div class="containerCard">
             <div
@@ -38,7 +38,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Rotating Card -->
         <div class="containerCard">
             <div
@@ -55,7 +55,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Card with Button -->
         <div class="containerCard">
             <div
@@ -70,10 +70,26 @@
                         Descrição do card que expande ao passar o mouse
                     </p>
                 </div>
-                <button class="card-button" onclick="showMoreInfo()">Mostre mais</button>
+                <button class="card-button" onclick="showMoreInfo()">
+                    Mostre mais
+                </button>
             </div>
         </div>
-
+        <!-- Card Flip -->
+        <div class="containerCard">
+            <div class="card-flip" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>Frente do card</h2>
+                        <p>Clique para virar</p>
+                    </div>
+                    <div class="card-back">
+                        <h2>Verso do card</h2>
+                        <p>Clique para virar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>
