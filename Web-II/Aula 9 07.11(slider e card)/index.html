@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Slider e card</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- exemplo de slider -->
+        <div id="dvSlider" onmouseover="parar()" onmouseout="iniciarSlider()">
+            <input
+                type="button"
+                value="<"
+                class="btn left"
+                onclick="troca(-1)"
+            />
+            <input
+                type="button"
+                value=">"
+                class="btn right"
+                onclick="troca(1)"
+            />
+        </div>
+        <!-- exemplod e card -->
+        <div class="containerCard">
+            <div
+                class="card"
+                onmouseover="expandCard(this)"
+                onmouseout="shinkCard(this)"
+            >
+                <img src="https://placehold.co/300x200" alt="card" />
+                <div class="card-content">
+                    <h2 class="card-title">Card</h2>
+                    <p class="card-description">
+                        Descrição do card que expande ao passar o mouse
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
